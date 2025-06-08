@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Kajal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="poster">
-            <div class="info">
-                <p class="i">Hello world !!!</p>
-                <h1>I am Kajal</h1>
-                <h3>A Computer science student</h3>
-                <p>I am final year student of PICT, Pune. I am familiar with different programming languages
-                    c/c++, Java, Python. I love programming in Java. I have experience building web applications.
-                    I have experience creating rest apis using spring boot.
-                    I have keen interest in web development  and machine learning.
-        
-                </p>
-                <div class="icons">
-                   <a href="https://github.com/kajaldhatrak" target="_blank"><i class="github fa-brands fa-github"></i></a>
-
-                </div>
-                <div class="buttons">
-                    <a href="https://www.linkedin.com/in/kajalsd30/" target="_blank" class="btn l">Contact Me</a>
-                    <a href="https://drive.google.com/file/d/1Ks5jbrSAjfFxeQOauzbSgOY8cxcmGFmL/view?usp=share_link" target="_blank" class="btn l">My Resume <i class="fa-sharp fa-solid fa-arrow-down-to-line"></i></a>
-                </div>
-            </div>
-            <div class="img">
-                <img src="./images/profile.png" alt="kajal profile">
-            </div>
-        </div>
+  <!-- Summary Section -->
+  <section id="summary">
+    <div class="about">
+      <img src="assets/profile.jpg" alt="My Photo" class="profile-photo">
+      <div>
+        <h1>Kajal Dhatrak</h1>
+        <p>Whether in my day to day role or through volunteering efforts outside of work, I take pride in being proactive and contributing where I can add value.
+          <br>
+          I am also passionate about user experience design and regularly explore UX principles to better understand how users interact with products and how thoughtful desing can drive meaningful impact.</p>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+      </div>
     </div>
-</body>
+  </section>
+  <!-- Work Experience Section -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+  <h4> Software Engineer at E2Open
+        July 2023 - Present</h4> 
+    <ul>
+      <li>Took end-to-end ownership of building a Java Spring microservice scheduler that streamlined management of complex NiFi workflows.
+</li>
+      <li>Led Java version upgrades for 3 microservices, ensuring smooth deployment and zero major production issues.
+</li>
 
+<li>
+  Translated UI/UX designs (Figma) and product requirements into clean, scalable backend APIs — aligning technical execution with user needs.
+
+</li>
+<li>Focused on backend development using Java Spring, MySQL, and Elasticsearch; contributed regularly to new API development and bug fixes.
+</li>
+<li>Daily use of Jenkins, Git, Docker, and Kubernetes as part of CI/CD and container orchestration workflows.
+</li>
+<li>Recognized with top performance ratings for 2 consecutive years; promoted within 12 months for consistent delivery and ownership.
+</li>
+<li>Commmunicate clearly and effectively during PR reviews and knowledge transfers within the team.</li>
+    </ul>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <a href="ux.html" class="project-card">
+        <img src="assets/ux.jpg" alt="UX Projects">
+        <h3>UX</h3>
+      </a>
+      <a href="product.html" class="project-card">
+        <img src="assets/product.jpg" alt="Product Projects">
+        <h3>Product</h3>
+      </a>
+      <a href="technical.html" class="project-card">
+        <img src="assets/technical.jpg" alt="Technical Projects">
+        <h3>Technical</h3>
+      </a>
+    </div>
+  </section>
+  <!-- Things People Should Know
+  <section id="about-more">
+    <h2>Things People Should Know</h2>
+    <ul>
+      <li><a href="#">My Blog</a></li>
+      <li>Volunteer Experience: Description</li>
+      <li><a href="#">Custom Link</a></li>
+    </ul>
+  </section> -->
+  <!-- Footer -->
+  <footer>
+    <a href="mailto:your@email.com"><img src="assets/email.svg" alt="Email"></a>
+    <a href="https://linkedin.com/in/yourprofile"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://medium.com/@yourprofile"><img src="assets/medium.svg" alt="Medium"></a>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
